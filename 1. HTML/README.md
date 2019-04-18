@@ -9,6 +9,10 @@
 
 ### Content
 
+#### Syntax
+
+![Css Declaration](./assets/html-syntax.svg)
+
 #### 语义/Semantics
 
 语义化概念：通过丰富的语义关系对数据进行逻辑化描述，便于数据人机可读、检索挖掘和共享交换，实现信息处理的自动化和智能化；即人类提供良好结构的、作为人能识别的数据给机器，让不同机器能准确高效的意会和处理数据反馈给人类。
@@ -29,7 +33,7 @@
 
 另外，支持视图、数据绑定的 MV* 框架，有内部的模板实现，以适应数据的依赖、数据的变化。
 
-#### 属性
+#### 属性/Attribute
 
 HTML 元素可以通过配置属性调整元素的行为，如 `class`, `title`, `data-*` 等属性。
 
@@ -47,6 +51,7 @@ HTML 结构化、逻辑化内容，开发者要合理使用语义标签，分明
 ### Up Next
 
 - [HTML5 技术集 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5)
+- [HTML（超文本标记语言） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML)
 - [MedicalCause - schema.org](https://schema.org/MedicalCause)
 - [Character Entity Reference Chart](https://dev.w3.org/html5/html-author/charref)
 - [语种名称代码](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)

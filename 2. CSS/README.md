@@ -18,14 +18,7 @@
 
 #### Syntax
 
-```
-selectorlist {
-  property: value;
-  [more property:value; pairs]
-}
-```
-
-![Css Declaration](./assets/css-syntax.jpg)
+![Css Declaration](./assets/css-syntax.svg)
 
 #### Selectors
 
@@ -127,6 +120,7 @@ selectorlist {
 ### Up Next
 
 - [BEM 参考：weui](https://github.com/Tencent/weui)
+- [CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
 - [CSS current work & how to participate - W3C](https://www.w3.org/Style/CSS/current-work)
 - [W3Help - 兼容性 - 根本原因 - CSS相关、混合类型(RX1001/RX8018)](http://www.w3help.org/zh-cn/causes/)
 - [CSS教程 - CSS HACK、问题与经验](https://www.html.cn/book/css/)
