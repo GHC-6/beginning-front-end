@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      height: 100%;
+    }
+
+    section {
+      display: flex;
+      width: 50%;
+
+      justify-content: space-between;
+      align-items: stretch;
+      min-height: 100%;
+    }
+
+    div {
+      width: 33.3%;
+      min-height: 100%;
+      border-left: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    A
+  </section>
+  <section style="position:relative">
+    <div>
+      <h1 style="float: left;">float</h1>
+      <span style="float: left;">float</span><!-- 浮动后元素会默认赋予 display: block 属性 -->
+      <h1 style="float: left;">float</h1><!-- 浮动影响正常文档流 -->
+      <h1>normal</h1>
+      <span style="clear: both; display: block;">display: block</span><!-- 清除浮动 -->
+      <h1>block</h1>
+    </div>
+    <div>2</div>
+    <div style="position:relative">
+      <h1 style="position: relative; top: 150px; left: -20px;">relative</h1><!-- 原来位置不脱离文档流 -->
+      <h1 style="position: absolute; bottom: 10px; left: 10px;">absolute</h1><!-- 脱离文档流 -->
+      <h1 style="position: fixed; right: 10px; bottom: 10px;">fixed</h1><!-- 脱离文档流 -->
+      <h1 style="position: static">normal</h1>
+    </div>
+  </section>
+</body>
+
+</html>
