@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690" height="207" viewBox="0 0 690 207">
+  <defs>
+    <clipPath id="clip-css-syntax">
+      <rect width="690" height="207"/>
+    </clipPath>
+  </defs>
+  <g id="css-syntax" clip-path="url(#clip-css-syntax)">
+    <rect width="690" height="207" fill="#fff"/>
+    <text id="h1_text-align:_center_color:_red_" data-name="h1 { text-align: center; color: red; }" transform="translate(72 95)" fill="#f92672" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">h1</tspan><tspan y="0" xml:space="preserve" fill="#000"> { </tspan><tspan y="0" fill="#26c30f">text-align</tspan><tspan y="0" fill="#000">: </tspan><tspan y="0" fill="#269fe5">center</tspan><tspan y="0" fill="#000">; </tspan><tspan y="0" fill="#26c30f">color</tspan><tspan y="0" fill="#000">: </tspan><tspan y="0" fill="#269fe5">red</tspan><tspan y="0" fill="#000">; }</tspan></text>
+    <text id="Selector" transform="translate(54 42)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Selector</tspan></text>
+    <text id="Property" transform="translate(182 42)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Property</tspan></text>
+    <text id="Declaration" transform="translate(239 140)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Declaration</tspan></text>
+    <text id="Rule" transform="translate(331 183)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Rule</tspan></text>
+    <text id="Value" transform="translate(339 42)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Value</tspan></text>
+    <g id="Group_11" data-name="Group 11">
+      <line id="Line_25" data-name="Line 25" y1="10" transform="translate(72 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_31" data-name="Line 31" y1="10" transform="translate(87 48.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_29" data-name="Line 29" y1="10" transform="translate(102 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_30" data-name="Line 30" x2="29.5" transform="translate(72.5 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+    <g id="Group_15" data-name="Group 15">
+      <line id="Line_43" data-name="Line 43" y1="10" transform="translate(72 146.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_46" data-name="Line 46" y1="10" transform="translate(345 156.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_44" data-name="Line 44" y1="10" transform="translate(619 146.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_45" data-name="Line 45" x1="546.5" transform="translate(72.5 156.5)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+    <g id="Group_14" data-name="Group 14">
+      <line id="Line_39" data-name="Line 39" y1="10" transform="translate(145 104.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_40" data-name="Line 40" y1="10" transform="translate(402 103.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_42" data-name="Line 42" y1="10" transform="translate(285 113.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_41" data-name="Line 41" x1="256.5" transform="translate(145.5 113.5)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+    <g id="Group_13" data-name="Group 13">
+      <line id="Line_35" data-name="Line 35" y1="10" transform="translate(318 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_38" data-name="Line 38" y1="10" transform="translate(360 48.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_36" data-name="Line 36" y1="10" transform="translate(402 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_37" data-name="Line 37" x2="83.5" transform="translate(318.5 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+    <g id="Group_12" data-name="Group 12">
+      <line id="Line_27" data-name="Line 27" y1="10" transform="translate(145 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_34" data-name="Line 34" y1="10" transform="translate(215 48.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_32" data-name="Line 32" y1="10" transform="translate(285 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <line id="Line_33" data-name="Line 33" x2="139.5" transform="translate(145.5 58.5)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
