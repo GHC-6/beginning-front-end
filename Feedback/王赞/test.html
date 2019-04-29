@@ -1,24 +1,198 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#"/>1</li>
-					<li><a href="#"/>2</li>
-					<li><a href="#"/>3</li>
-					<li><a href="#"/>4</li>
-				</ul>
-			</nav>
-		</header>  
-		<main>
-			<aside>
-				<menu></menu>
-			</aside>
-			<section></section>
-		</main>
-		<footer></footer>
-	</body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="page_header">
+  <nav class="nav">
+    <ul class="ul_header">
+      <li><a class="a_color" href="#">index</a></li>
+      <li><a class="a_color" href="#">feedback</a></li>
+    </ul>
+  </nav>
+</header>
+<aside class="aside_menu">
+  <ul>
+    <li><a class="a_color" href="#overview">Overview</a></li>
+    <li><a class="a_color" href="#content">Content</a>
+      <ul>
+        <li><a class="a_color" href="#syntax">语法/Syntax</a></li>
+        <li><a class="a_color" href="#selectors">选择器/Selectors</a></li>
+        <li><a class="a_color" href="#architecture">设计/Architecture</a></li>
+        <li><a class="a_color" href="#bad_practices">糟糕做法/Bad Practices</a></li>
+        <li><a class="a_color" href="#best_practices">实践/Best Practices</a></li>
+      </ul>
+    </li>
+    <li><a class="a_color" href="#additional_resources">Additional Resources</a></li>
+    <li><a class="a_color" href="#up_next">Up Next</a></li>
+  </ul>
+
+</aside>
+<main class="main_content">
+
+  <header class="main_header">
+    <h2>层叠样式表/CSS: Cascading Style Sheets</h2>
+    <p>描述 HTML 或 XML（包括如 SVG、MathML、XHTML 之类的 XML 分支语言）文档的呈现。</p>
+  </header>
+  <section>
+    <h3 id="overview">Overview</h3>
+    <ul>
+      <li>语法/Syntax</li>
+      <li>选择器/Selectors</li>
+      <li>设计/Architecture</li>
+      <li>糟糕做法/Bad Practices</li>
+      <li>实践/Best Practices</li>
+    </ul>
+  </section>
+  <section>
+    <h3 id="content">Content</h3>
+    <p>浏览器默认样式、外链样式、内联样式、行内样式 <br>
+      <img src="../../2. CSS/assets/rendering.svg" alt="rendering">
+    </p>
+    <div>
+      <h4 id="syntax">Syntax</h4>
+      <img src="../../2. CSS/assets/css-syntax.svg" alt="Css Declaration">
+    </div>
+    <div>
+      <h4 id="selectors">Selectors</h4>
+      <ul>
+        <li>基本选择器
+          <ul>
+            <li>元素选择器/Type selector <span class="example">element</span></li>
+            <li>类选择器/Class selector <span class="example">.class</span></li>
+            <li>ID 选择器/ID selector <span class="example">#id</span></li>
+            <li>通配选择器/Universal <span class="example">selector *, ns|*, *|*</span></li>
+            <li>属性选择器/Attribute <span class="example">selector [attr], [attr=value], [attr~=value], [attr|=value], [attr^=value], [attr$=value], [attr*=value]</span>
+            </li>
+          </ul>
+        </li>
+        <li>组合选择器
+          <ul>
+            <li>相邻兄弟选择器/Adjacent sibling <span class="example">combinator A + B, former_element + target_element { style properties }</span>
+            </li>
+            <li>普通兄弟选择器/General sibling <span class="example">combinator A ~ B, former_element ~ target_element { style properties }</span>
+            </li>
+            <li>子选择器/Child <span class="example">combinator A > B</span></li>
+            <li>后代选择器/Descendant <span class="example">combinator A B</span></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes" name="伪类/Pseudo-classes">伪类/Pseudo-classes</a>
+          <ul>
+            <li>CSS Pseudo-classes: <span class="example">:link, :visited, :hover, :active, :focus, :first-child, :last-child, :not(selector), :nth-child(n), :nth-of-type(n), :nth-last-child(n), :nth-last-of-type(n), :only-child, :only-of-type, :lang(language) ...</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements" name="伪元素Pseudo-elements">伪元素/Pseudo-elements</a>
+          <ul>
+            <li>CSS Pseudo-elements: <span class="example">::after, ::before, ::first-letter, ::first-line, ::placeholder, ::selection ...</span>
+            </li>
+            <li><img src="../../2. CSS/assets/specificity-calculationbase.png" alt="Css specificity"></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/specifics-on-css-specificity/"
+             name="Specifics on CSS Specificity | CSS-Tricks">Specifics on CSS Specificity | CSS-Tricks</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h4 id="architecture">Architecture</h4>
+      <ul>
+        <li>可用性, 可靠性/Usability, Reliability，能用，稳健</li>
+        <li>一致性/Consistency，能兼容</li>
+        <li>实用性/Availability，易于实现，易于理解，不依赖 Hack</li>
+        <li>可预测性/Predictability，能预测在更新、添加规则后受影响的范围</li>
+        <li>可维护性/Maintainability, Extensibility，各组件和功能耦合低，不被其它规则破坏，可改，可加</li>
+        <li>弹性/Scalability，能根据 Web 应用的规模和复杂性，能删，能增</li>
+        <li>可移植性/Portability，Atomicity，抽象分离，可重复使用</li>
+        <li>无障碍/Accessibility，照顾特殊群体</li>
+      </ul>
+      <p>意思就是，当我们架构 CSS 时候，要采用 <a href="https://getbootstrap.com/" name="Bootstrap">Bootstrap</a> 那样的设计理念。</p>
+    </div>
+    <div>
+      <h4 id="bad_practices">Bad Practices</h4>
+      <ul>
+        <li>基于父元素来修改组件</li>
+        <li>过于复杂的选择器，级联臃肿</li>
+        <li>过于通用的类名称</li>
+        <li>一个规则做太多事情</li>
+        <li>多个规则做相同事情</li>
+        <li>命名具体表象，颜色/尺寸/方位/形状，<span class="example">.blue, .f14, .m10, .p10, .right, .dashed</span></li>
+        <li>使用 <span class="example">id </span>选择器</li>
+        <li>使用 <span class="example">!important</span></li>
+        <li>固定尺寸</li>
+      </ul>
+      <pre>
+                    .sidebar h3 {
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: .8em;
+                      line-height: 1;
+                      color: #777;
+                      text-shadow: rgba(0, 0, 0, .3) 3px 3px 6px;
+                    }
+
+                    .footer h3 {
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 2em;
+                      line-height: 1;
+                      color: #777;
+                      text-shadow: rgba(0, 0, 0, .3) 3px 3px 6px;
+                    }
+                    .title {
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 2em;
+                      line-height: 1;
+                      color: #777;
+                      text-shadow: rgba(0, 0, 0, .3) 3px 3px 6px;
+                    }
+
+                    .footer .title {
+                      font-size: 1.5em;
+                      text-shadow选择器: rgba(0, 0, 0, .3) 2px 2px 4px;
+                    }
+                </pre>
+    </div>
+    <div>
+      <h4 id="best_practices">Best Practices</h4>
+      <ul>
+        <li>减少与 HTML 的耦合度</li>
+        <li>目的明确不误操作其它元素</li>
+        <li>分离关注点(HTML, CSS)，组合使用 <a href="https://github.com/stubbornella/oocss/wiki" name="OOCSS">OOCSS</a> 和 <a
+            href="http://getbem.com/naming/" name="BEM">BEM</a>：
+          <ul>
+            <li>Structure, Skin</li>
+            <li>Container, Content</li>
+            <li>Base(Reset, Normalize), Layout, Module, State, Theme</li>
+          </ul>
+        </li>
+        <li>采用兼容语言扩展 CSS preprocessor</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h3 id="additional_resources">Additional Resources</h3>
+    <ul>
+      <li><a href="https://www.html.cn/book/css/">CSS教程 - 入门教程、选择器、取值与单位-长度</a></li>
+      <li><a href="https://www.html.cn/doc/css3/">CSS3教程</a></li>
+    </ul>
+  </section>
+  <section>
+    <h3 id="up_next">Up Next</h3>
+    <ul>
+      <li><a href="https://github.com/Tencent/weui">BEM 参考：weui</a></li>
+      <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS">CSS（层叠样式表） | MDN</a></li>
+      <li><a href="https://www.w3.org/Style/CSS/current-work">CSS current work & how to participate - W3C</a></li>
+      <li><a href="http://www.w3help.org/zh-cn/causes/">W3Help - 兼容性 - 根本原因 - CSS相关、混合类型(RX1001/RX8018)</a></li>
+      <li><a href="CSS教程 - CSS HACK、问题与经验">https://www.html.cn/book/css/</a></li>
+    </ul>
+  </section>
+
+</main>
+<footer class="footer">
+  <address>copy right: wangzan@ghcchina.com.cn</address>
+</footer>
+</body>
 </html>
