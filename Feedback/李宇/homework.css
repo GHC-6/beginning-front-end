@@ -1,0 +1,83 @@
+.top-bar {
+  top: 0;
+  padding: 0;
+  text-align: center;
+  background: #999999;
+}
+
+.top-nav-bar a {
+  padding: 0.3em;
+  margin-bottom: 0.8em;
+  display: inline-block;
+  color: #fcfcfc;
+}
+
+.ref-internal {
+  color: #1f1d1d;
+}
+
+.aside-menu {
+  margin-top: 39px;
+  float: left;
+  position: fixed;
+  background: bisque;
+}
+
+.aside-menu .ref-internal:active {
+  color: #fcfcfc;
+  background: #1f1d1d;
+}
+
+.aside-menu li {
+  line-height: 2em;
+  list-style: none;
+}
+
+.aside-nav-2 {
+  font-size: 0.9em;
+}
+
+.main-content {
+  padding: 4em 3em;
+  margin-left: 25%;
+  background: #fcfcfc;
+}
+
+.copyright {
+  bottom: 0;
+  text-align: center;
+  color: #fcfcfc;
+  background: #1f1d1d;
+}
+
+.fixed {
+  position: fixed;
+  display: block;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 75%;
+}
+
+.row-4 {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=homework.css.map */

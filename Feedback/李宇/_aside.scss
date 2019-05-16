@@ -1,0 +1,32 @@
+$black:#1f1d1d;
+$white:#fcfcfc;
+$bisque-color:bisque;
+$margin-top:39px;
+$float-left:left;
+$position-fixed:fixed;
+$line-height-2:2em;
+$none:none;
+$font-size:.9em;
+.ref-internal {
+  color: $black;
+}
+.aside-menu {
+  margin-top:$margin-top;
+  float: $float-left;
+  position: $position-fixed;
+  background: $bisque-color;
+}
+
+.aside-menu .ref-internal:active {
+  color: $white;
+  background: $black;
+}
+
+.aside-menu li {
+  line-height: $line-height-2;
+  list-style: $none;
+}
+
+.aside-nav-2 {
+  font-size: $font-size;
+}
