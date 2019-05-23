@@ -1,25 +1,13 @@
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-}
-
-.clearfix {
-  zoom:1;
-}
-
 html, body {
   width: 100%;
   min-height: 100%;
 }
 
 body {
-   position: relative;
-   margin: 0;
-   font-size: 16px;
- }
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+}
 
 .header__logo {
   margin: 0;
@@ -39,7 +27,7 @@ body {
 .nav__item {
   float: left;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 24px;
   color: #000;
 }
 
@@ -49,18 +37,19 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   background-color: #fff;
 }
 
-.page__main{
+.page__main {
   position: relative;
   padding-top: 68px;
-  padding-bottom: 74px;
+  padding-bottom: 70px;
 }
 
 .page__container {
   margin-left: 300px;
+  margin-top: 20px;
 }
 
 .page__aside {
@@ -75,9 +64,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   color: #fff;
   background-color: #10a4c2;
 }
+
+h2:target, h3:target {
+  color: red;
+}
+
+/*# sourceMappingURL=patch.css.map */
