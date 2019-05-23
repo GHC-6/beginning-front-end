@@ -3,6 +3,7 @@
   padding: .8em;
   text-align: center;
   background: #1f1d1d;
+  width: 100%
 }
 
 .top-nav-bar a {
@@ -36,9 +37,7 @@
   list-style: none;
 }
 
-.ref-internal {
-  color: #1f1d1d;
-}
+.ref-internal {color: #1f1d1d;}
 
 .aside-menu .ref-internal:active {
   color: #fcfcfc;
@@ -50,19 +49,6 @@
   display: block;
 }
 
-.aside-nav-2 {
-  font-size: .9em;
-}
+.aside-nav-2 {font-size: .9em;}
 
-.col-4 {
-  width: 100%;
-}
-
-.col-1 {
-  width: 25%;
-}
-
-.row-4 {
-  height: 100%;
-}
 
