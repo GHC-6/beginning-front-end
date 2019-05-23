@@ -1,0 +1,2 @@
+- 基本类型：Number、String、Boolean、Undefined、Null
+- 引用类型：Object类型、Array、Function
