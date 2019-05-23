@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>4.AMD/RequireJS</title>
+</head>
+
+<body>
+    <small>编辑器查看源码</small>
+    <h1>
+        The Answer is
+        <span id="answer"></span>
+    </h1>
+    <hr>
+    <h2>AMD/RequireJS</h2>
+
+
+    <script data-main="./js/main" src="./lib/require.min.js"></script>
+    <!-- 服务器端 CommonJS 规范定义了模块 require/module.exports，一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见，每个文件就是一个模块，有自己的作用域。 -->
+    <!-- 浏览器环境的异步模块规范(AMD)使用 define 方法定义模块  -->
+    <!-- AMD 解决了模块(IIFE)模式中剩下的两个问题：依赖解析(加载性) 和 全局作用域污染(封装性) -->
+
+    <!-- [AMD (中文版)](https://github.com/amdjs/amdjs-api/wiki/AMD-(%E4%B8%AD%E6%96%87%E7%89%88)) -->
+    <!-- [require (中文版)](https://github.com/amdjs/amdjs-api/wiki/require-(%E4%B8%AD%E6%96%87%E7%89%88)) -->
+    <!-- [RequireJS API](https://requirejs.org/docs/api.html) -->
+</body>
+
+</html>
