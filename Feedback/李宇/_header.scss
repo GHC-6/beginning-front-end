@@ -1,0 +1,19 @@
+$zero:0;
+$align-center:center;
+$gray:#999999;
+$padding-size:.3em;
+$margin-bottom-size:.8em;
+$white:#fcfcfc;
+.top-bar {
+  top: $zero;
+  padding: $zero;
+  text-align: $align-center;
+  background: $gray;
+}
+
+.top-nav-bar a {
+  padding: $padding-size;
+  margin-bottom: $margin-bottom-size;
+  display: inline-block;
+  color: $white;
+}
