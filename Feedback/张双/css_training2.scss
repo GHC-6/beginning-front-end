@@ -1,0 +1,64 @@
+$font_color: #fcfcfc;
+$background_color: #1f1d1d;
+$text_align_center: center;
+$fixed_position: fixed;
+$percent_4: 100%;
+$percent_0: 0%;
+$percent_1: 20%;
+
+
+.top-bar {
+  top: $percent_0;
+  padding: .8em;
+  text-align: $text_align_center;
+  background: $background_color;
+  width: $percent_4
+}
+
+.top-nav-bar a {
+  padding: .3em;
+  margin-bottom: .8em;
+  display: inline-block;
+  color: $font_color;
+}
+
+.aside-menu {
+  padding-top: 4em;
+  float: left;
+  position: $fixed_position;
+  li {
+    line-height: 2em;
+    list-style: none;
+  }
+}
+
+.main-content {
+  padding: 4em 3em;
+  margin-left: $percent_1;
+  background: $font_color;
+}
+
+.copyright {
+  bottom: 0;
+  text-align: $text_align_center;
+  color: $font_color;
+  background: $background_color;
+}
+
+.ref-internal {
+  color: $background_color;
+  &:active {
+    color: $font_color;
+    background: $background_color;
+  }
+}
+
+
+.fixed {
+  position: $fixed_position;
+  display: block;
+}
+
+.aside-nav-2 {font-size: .9em;}
+
+

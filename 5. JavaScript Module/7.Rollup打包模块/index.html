@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>7.Rollup</title>
+    <style>
+        blockquote {
+            border-left: 10px solid #ddd;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <small>编辑器查看源码</small>
+    <h1>
+        The Answer is
+        <span id="answer"></span>
+    </h1>
+    <hr>
+    <p>Rollup 打包构建</p>
+    <ol>
+        <li>依赖 <a href="http://nodejs.org/" target="_blank">nodejs</a> 环境</li>
+        <li>安装<a href="https://rollupjs.org/" target="_blank">Rollup</a>:$ npm install -g rollup</li>
+        <li>在项目目录执行: $ rollup -i js/main.js -o dist/bundle.js --f iife</li>
+        <li>-f, --format &lt;format&gt; Type of output (amd, cjs, esm, iife, umd)</li>
+    </ol>
+    <h3>注:</h3>
+    <p>1: '$': 管理员权限执行命令</p>
+    <p>2: npm intall 安装访问可能有网络连接问题, 使用 <a href="https://npm.taobao.org/" target="_blank">淘宝镜像</a></p>
+    <hr>
+
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
