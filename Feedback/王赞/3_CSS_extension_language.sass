@@ -1,0 +1,152 @@
+<<<<<<< HEAD
+$max-size:100%
+$fix-position:fixed
+$a-color:steelblue
+$float:left
+$b-color:white
+$top:60px
+$text-decla:(link:none,visited:none,hover:underline,active:underline)
+html
+  width: $max-size
+  height: $max-size
+body
+  height: $max-size
+  width: $max-size
+  margin: 0px
+  padding: 0px
+  font-size: 14px
+  font-family: "微软雅黑"
+.page_header
+  position: $fix-position
+  width: $max-size
+  height: 60px
+  margin: 0px auto
+  border-collapse: collapse
+  background-color: $a-color
+
+.nav
+  &:hover
+    display: inline-block
+    padding: 8px 20px
+    float: $float
+    color: $b-color
+.a_color
+  color: $b-color
+  padding: 5px 1px
+  &:hover
+    text-decoration: none
+    background-color: #1d3e81
+.aside_menu
+  position: $fix-position
+  top: $top
+  left: 0px
+  bottom: 0px
+  z-index: 11
+  width: 250px
+  min-height: $max-size
+  background: #1e1f26
+  float: $float
+  & li
+    margin: 20px 10px 30px
+    list-style: none
+.main_content
+  left: 300px
+  top: $top
+  right: 0px
+  bottom: 25px
+  min-height: $max-size
+  padding: $top 0px 25px 300px
+  overflow: auto
+  background-color: aliceblue
+.example
+  border-radius: 10px
+  background-color: white
+.footer
+  width: $max-size
+  height: 25px
+  background-color: gray
+  position: relative
+  bottom: 0px
+  left: 0px
+  clear: both
+  & address
+    text-align: center
+@each $tag,$value in $text-decla
+  a:#{$tag}
+=======
+$max-size:100%
+$fix-position:fixed
+$a-color:steelblue
+$float:left
+$b-color:white
+$top:60px
+$text-decla:(link:none,visited:none,hover:underline,active:underline)
+html
+  width: $max-size
+  height: $max-size
+body
+  height: $max-size
+  width: $max-size
+  margin: 0px
+  padding: 0px
+  font-size: 14px
+  font-family: "微软雅黑"
+.page_header
+  position: $fix-position
+  width: $max-size
+  height: 60px
+  margin: 0px auto
+  border-collapse: collapse
+  background-color: $a-color
+
+.nav
+  &:hover
+    display: inline-block
+    padding: 8px 20px
+    float: $float
+    color: $b-color
+.a_color
+  color: $b-color
+  padding: 5px 1px
+  &:hover
+    text-decoration: none
+    background-color: #1d3e81
+.aside_menu
+  position: $fix-position
+  top: $top
+  left: 0px
+  bottom: 0px
+  z-index: 11
+  width: 250px
+  min-height: $max-size
+  background: #1e1f26
+  float: $float
+  & li
+    margin: 20px 10px 30px
+    list-style: none
+.main_content
+  left: 300px
+  top: $top
+  right: 0px
+  bottom: 25px
+  min-height: $max-size
+  padding: $top 0px 25px 300px
+  overflow: auto
+  background-color: aliceblue
+.example
+  border-radius: 10px
+  background-color: white
+.footer
+  width: $max-size
+  height: 25px
+  background-color: gray
+  position: relative
+  bottom: 0px
+  left: 0px
+  clear: both
+  & address
+    text-align: center
+@each $tag,$value in $text-decla
+  a:#{$tag}
+>>>>>>> a5a2ae78b9e1a9d88e346735fb332c19d02951b7
+    text-decoration: $value
