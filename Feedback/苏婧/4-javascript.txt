@@ -1,0 +1,4 @@
+1.基本类型有哪些？
+string,number,boolean,null,undefined
+2.引用类型有哪些？
+Function,Array,Object
