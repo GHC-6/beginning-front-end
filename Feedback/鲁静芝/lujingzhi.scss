@@ -1,0 +1,60 @@
+$width: 100%;
+$height: 100%;
+$font-size: 14px;
+$margin-top:20px;
+$margin-left:20px;
+$color-a:#0366d6;
+$color-a1:black;
+$text-align:center;
+$text-decoration:none;
+$text-decoration-hover:underline;
+$font-family:Roboto, "Helvetica Neue", "Microsoft YaHei", sans-serif;
+
+
+
+body{
+  padding: 0;
+  margin: auto;
+  height:$height;
+  width:$width - 10%;
+  font-family: $font-family;
+  font-size: $font-size + 2px;
+}
+
+.module-float{
+  float: left;
+  margin-top: $margin-top;
+}
+
+.page-width,
+.page-li li>a{
+  width:$width;
+  color:$color-a1;
+  &:hover{
+    text-decoration: $text-decoration-hover;
+  }
+}
+
+.page-menu{
+  width:$width - 80%;
+  &:hover{
+    text-decoration: $text-decoration-hover;
+  }
+}
+
+.page-container{
+  width:$width - 25%;
+  margin-left: $margin-left;
+  &:hover{
+    text-decoration: $text-decoration-hover;
+  }
+}
+
+.page-footer{
+  text-align: $text-align;
+}
+
+a {
+  color: $color-a;
+  text-decoration: $text-decoration;
+}
