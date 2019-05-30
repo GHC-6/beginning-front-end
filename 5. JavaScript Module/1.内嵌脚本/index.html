@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>1.内嵌脚本</title>
+</head>
+
+<body>
+  <small>编辑器查看源码</small>
+  <h1>
+    The Answer is
+    <span id="answer"></span>
+  </h1>
+  <hr>
+  <h2>内嵌脚本</h2>
+
+  <script type="text/javascript">
+    // 写一大段代码
+    // 1.add
+    function add(a, b) {
+      return a + b;
+    }
+
+    // 2.reduce
+    function reduce(arr, add) {
+      var index = 0,
+        length = arr.length,
+        currentValue = arr[index];
+
+      for (index += 1; index < length; index += 1) {
+        currentValue = add(currentValue, arr[index])
+      }
+
+      return currentValue;
+    }
+
+    // 3.sum, 依赖 1.add 2.reduce
+    function sum(arr) {
+      return reduce(arr, add);
+    }
+
+    // 4.main, 依赖3.sum
+    var values = [1, 2, 3];
+    var answer = sum(values);
+
+    document.getElementById("answer").innerHTML = answer;
+        // 1. 缺乏代码可重用性，另一个页面需要，只能复制粘贴
+        // 2. 全局命名空间污染，所有的函数和变量将都将驻留在全局作用域中
+        // 3. 缺乏依赖解析，开发者保证依赖引用
+  </script>
+</body>
+
+</html>

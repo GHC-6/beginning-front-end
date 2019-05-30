@@ -1,0 +1,27 @@
+<!-- 0.index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>3.模块模式(IIFE)</title>
+</head>
+
+<body>
+    <small>编辑器查看源码</small>
+    <h1>
+        The Answer is
+        <span id="answer"></span>
+    </h1>
+    <hr>
+    <h2>IIFE 模式</h2>
+    <script type="text/javascript" src="1.app.js"></script>
+    <script type="text/javascript" src="2.add.js"></script>
+    <script type="text/javascript" src="3.reduce.js"></script>
+    <script type="text/javascript" src="4.sum.js"></script>
+    <script type="text/javascript" src="5.main.js"></script>
+    <!-- 1. 可能会被污染，只是减少 Global 上的变量数，app.js 中定义了一个全局对象 -->
+    <!-- 2. 缺乏依赖解析，还是要保证文件顺序(封装性，没加载性) -->
+</body>
+
+</html>

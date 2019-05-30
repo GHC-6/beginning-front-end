@@ -1,0 +1,76 @@
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+   position: relative;
+   margin: 0;
+   font-size: $font-size-base;
+ }
+
+.header__logo {
+  margin: 0;
+}
+
+.header__logo, .header__nav {
+  display: inline-block;
+}
+
+.header__nav {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  list-style: none;
+}
+
+.nav__item {
+  float: left;
+  padding: $padding-base;
+  font-size: $font-size-large;
+  color: $primary-color;
+}
+
+.page__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px $light-color;
+  background-color: $white;
+}
+
+.page__main{
+  position: relative;
+  padding-top: $header-height;
+  padding-bottom: $footer-height;
+}
+
+.page__container {
+  margin-left: $aside-width;
+  margin-top: $margin-base;
+}
+
+.page__aside {
+  position: absolute;
+  top: $header-height;
+  left: 0;
+  width: $aside-width;
+}
+
+.page__footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: $padding-base;
+  padding-bottom: $padding-base;
+  text-align: center;
+  color: $white;
+  background-color: $footer-bg;
+}
+
+h2:target, h3:target {
+  color:red;
+}

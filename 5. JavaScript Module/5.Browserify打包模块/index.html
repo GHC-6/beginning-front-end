@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Browserify 打包构建</title>
+</head>
+
+<body>
+    <small>编辑器查看源码</small>
+    <h1>
+        The Answer is
+        <span id="answer"></span>
+    </h1>
+    <hr>
+    <h2>Browserify 打包构建</h2>
+    <ol>
+        <li>安装 <a href="http://nodejs.org/" target="_blank">nodejs</a> 到 "C:\nodejs"</li>
+        <li>
+            <ul>
+                <li>检查nodejs: <sup>1</sup>$ node -v ,$ npm -v</li>
+                <li>
+                    配置npm<sup>2</sup>全局模块存放路径、cache的路径:
+                    <dl>
+                        <dt>NodeJS的主目录建`node_global`及`node_cache`两个文件夹, 方法：</dt>
+                        <dd>
+                            <ul>
+                                <li>$ cd \pro*\nod*</li>
+                                <li>$ md node_global node_cache</li>
+                                <li>$ npm config set prefix "C:\nodejs\node_global"</li>
+                                <li>$ npm config set cache "C:\nodejs\node_cache"</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </li>
+        <li>安装<a href="http://browserify.org/" target="_blank">Browserify</a>:$ npm install -g browserify</li>
+        <li>在项目目录执行: $ browserify js/main.js -o dist/bundle.js</li>
+    </ol>
+    <h3>注:</h3>
+    <p>1: '$': 管理员权限执行命令</p>
+    <p>2: npm intall 安装访问可能有网络连接问题, 使用 <a href="https://npm.taobao.org/" target="_blank">淘宝镜像</a></p>
+    <hr>
+
+    <!-- 自动打包生成文件 -->
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>

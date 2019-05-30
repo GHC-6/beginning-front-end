@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript模块化</title>
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQAQMAAADdiHD7AAAABlBMVEUAAAAIAwSHNH+tAAAAAXRSTlMAQObYZgAAAQNJREFUSMfd0kGKwyAYxfEnLlzmCD2KV5mbNEfL3MQjODsX4puOITZ9hmkJgdL8wc0PEkU/fEYuqHgKGVJooNKVQo4U8hQypNBAJc//KZ6ALmtKu+inp9Hf1gMVDEoZTinB3um7UlwT/EymUZ4/Do0GpjYijSJcT7bRNA9E2CKjNC1kntBy1IK/VmSZHynBLbTsmDEoFVxYGtn5oq+NYhv7Rkmp/lepwD9QfRZ2xKPIct0JyKwldAQIJShNECqAUIASIJSgNOGVLGNPt0ahWuqJ5UDKH0nuFJQOp3507vlKklHSXOmJZYPqErLkBo27yGzStIuwSeEVylD6en45saMR7+wXTLNg+yP9YigAAAAASUVORK5CYII=">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQDCUUEAwgvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAgAEAwn/BAMJ/wAAAAAEAwkmBAMI6QQDCcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQIABAMJxgQDCK0AAAAABAMIMgQDCZcEAwmBBAMJBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAMJsAQDCeAEAwnjBAMI9gQDCf8EAwn/BAMJ/wQDCT8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQDCeAEAwn/BAMJ/wQDCf8EAwn/BAMJ/wQDCf8EAwlVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAwjGBAMJ/wQDCf8EAwn/BAMJ/wQDCf8EAwn/BAMIVQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQDCQ0EAwkWBAMJmgQDCcAEAwmqBAMJqgQDCZEEAwmOBAMJewQDCDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAwh0BAMJ/wQDCf8EAwnjBAMJzQQDCbcEAwmkBAMJjgQDCHEEAwlbBAMJRQQDCS8EAwkGAAAAAAAAAAAAAAAABAMJjgQDCf8EAwj/BAMJ/wQDCP8EAwn/BAMJ/wQDCP8EAwj/BAMJ/wQDCf8EAwn/BAMJOQAAAAAAAAAABAMJEwQDCcMEAwn/BAMJsAQDCLcEAwn/BAMI/wQDCf8EAwn/BAMJ/wQDCP8EAwn/BAMJ/wQECR8AAAAAAAAAAAQDCEIEAwn/BAMJ1gAAAAAEAwkDBAMI6QQDCf8EAwn/BAMJ/wQDCWsEAwkpBAMJ2QQDCf8EAwkmAAAAAAAAAAAEAwkTBAMJ4AQDCfkEAwlFBAMIUgQDCfwEAwn/BAMI/wQDCf8EAwkpAAAAAAQDCaEEAwn/BAMJXgAAAAAAAAAAAAAAAAQDCekEAwj/BAMJ/wQDCf8EAwn/BAMI/wQDCf8EAwj/BAMJ3AQDCacEAwn8BAMJ5gQDCRwAAAAAAAAAAAAAAQAEAwn/BAMJ/wQDCP8EAwn/BAMJ/wQDCf8EAwj/BAMJ/wQDCf8EAwn/BAMJ/wQDCcYAAAAAAAAAAAAAAAAAAAAABAMIHAQDCTYEAwlMBAMJYgQDCXgEAwiOBAMJpwQDCb0EAwnTBAMJ6QQDCf8EAwmqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEABAQIEwAAAAAAAAAA8f8AAPEfAADxDwAA8A8AAPAPAADwDwAAwA8AAMABAADAAQAAgAEAAIABAACAEQAAgAEAAIADAACAAwAA/+MAAA==">
+  <link href="../assets/vendor/swiper/swiper.min.css" rel="stylesheet">
+  <link href="../assets/vendor/prism/prism.css" rel="stylesheet">
+  <style>
+    html {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    menu,
+    dl,
+    ol,
+    ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    dd {
+      margin-left: 0;
+    }
+
+    menu,
+    ol,
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    i {
+      font-style: normal;
+    }
+
+    strong {
+      font-weight: bolder;
+    }
+
+    a {
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+    }
+
+    img {
+      border-style: none;
+      -ms-interpolation-mode: bicubic;
+    }
+  </style>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.618;
+      background-image: #fff;
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: left;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-bottom: 0.45em;
+      font-size: 1.75em;
+    }
+
+    h3 {
+      margin-bottom: 0.4em;
+      font-size: 1.5em;
+    }
+
+    h4 {
+      margin-bottom: 0.35em;
+      font-size: 1.375em;
+    }
+
+    h5 {
+      margin-bottom: 0.3em;
+      font-size: 1.25em;
+    }
+
+    h6 {
+      margin-bottom: 0.25em;
+      font-size: 1.25em;
+    }
+
+    p {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      font-size: 1.125em;
+    }
+
+    li {
+      font-size: 1.125em;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .small {
+      font-size: 1em;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      position: relative;
+      font-size: 18px;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 16%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .wrapper img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .middle {
+      top: 30%;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .fluent {
+      background-color: #243a5e;
+    }
+
+    .tight .wrapper {
+      top: 6%;
+      bottom: 6%;
+      width: 68%;
+    }
+
+    .tight .wrapper p:not(:last-child) {
+      margin-bottom: 1.25em;
+    }
+
+    .flat-shadow {
+      box-shadow: 15px 15px 0 0 rgba(0, 0, 0, .2);
+    }
+
+    .shadow {
+      display: block;
+      position: relative;
+    }
+
+    .shadow::before {
+      position: absolute;
+      width: 50%;
+      height: 50px;
+      background-color: #f00;
+      content: " ";
+    }
+
+    .fluent-dark {
+      background-color: #2b2b2b;
+    }
+
+    .fluent-gray {
+      background-color: #ebebeb;
+    }
+
+    .fluent-dark .wrapper,
+    .fluent-gray .wrapper,
+    .fluent-layout .wrapper,
+    .fluent .wrapper {
+      top: 2%;
+      bottom: 2%;
+      width: 80%;
+    }
+  </style>
+
+  <style>
+    .style-0 {
+      background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+    }
+
+    .style-1 {
+      background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    }
+
+    .style-2 {
+      background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+    }
+
+    .style-3 {
+      background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%);
+    }
+
+    .style-4 {
+      background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    }
+
+    .style-5 {
+      background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    }
+
+    .style-6 {
+      background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    }
+
+    .style-7 {
+      background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+    }
+
+    .style-8 {
+      background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    }
+
+    .style-9 {
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    .style-10 {
+      background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    }
+
+    .style-11 {
+      background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    }
+
+    .style-12 {
+      background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    }
+
+    .style-13 {
+      background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    }
+
+    .style-14 {
+      background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    }
+
+    .style-15 {
+      background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    }
+
+    .style-16 {
+      background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    }
+
+    .style-17 {
+      background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+      background-blend-mode: normal, color-burn;
+    }
+
+    .style-18 {
+      background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <article class="swiper-container swiper-container-horizontal">
+    <main class="swiper-wrapper">
+
+      <section class="swiper-slide style-2" data-hash="1">
+        <div class="wrapper middle">
+          <h1>JavaScript 模块化</h1>
+          <h6>山茶树和葡萄树 -
+            <a href="https://xinlu.ink/" target="_blank">xinlu.ink</a> - 2019/05/23
+          </h6>
+        </div>
+      </section>
+
+      <section class="swiper-slide style-6" data-hash="2">
+        <div class="wrapper">
+          <h2>面临场景</h2>
+          <ul>
+            <li>- 早期互联网环境下的应用场景简单，JavaScript 语言设计得较随(粗)意(糙)</li>
+            <li>- <code>script</code> 标签引/嵌入</li>
+            <li>- 时代演变，通过浏览器(内核)交互的应用越来越<strong>多</strong>越<strong>大</strong></li>
+            <li>- Web 开发者编写的代码越来越<strong>多</strong>越<strong>复杂</strong></li>
+            <li>- 语言的约束性宽松，人的约束性...</li>
+            <li>- 需要一套‘<strong>作用域隔离、组织构建(依赖、合并、压缩、混淆)</strong>’机制</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="swiper-slide style-8" data-hash="3">
+        <div class="wrapper">
+          <h2>我们经历了</h2>
+          <ul>
+            <li>- <strong>所有</strong>的代码写入到单个 JavaScript、CSS 文件</li>
+            <li>- 手动地在各 HTML 文件中引入<strong>全部</strong>的 JavaScript、CSS 文件</li>
+            <li>- 变量暴露在全局环境，出现命名冲突</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="swiper-slide style-12" data-hash="4">
+          <div class="wrapper">
+            <h2>看代码，了解 JavaScript 模块化之路</h2>
+            <p>其它方向：弱类型，如何对变量、参数进行类型约定和检查？</p>
+          </div>
+        </section>
+
+    </main>
+    <span class="swiper-pagination swiper-pagination-progressbar"></span>
+    <span class="swiper-button-prev hidden"></span>
+    <span class="swiper-button-next hidden"></span>
+  </article>
+
+  <script src="../assets/vendor/swiper/swiper.min.js"></script>
+  <script src="../assets/vendor/prism/prism.js"></script>
+  <script>
+    ;
+    (function () {
+      document.addEventListener("DOMContentLoaded", function (event) {
+
+        var mySwiper = new Swiper('.swiper-container', {
+          speed: 400,
+          loop: false,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar'
+          },
+          keyboard: {
+            enabled: true,
+            onlyInViewport: false
+          },
+          mousewheel: {
+            invert: true
+          },
+          hashNavigation: {
+            watchState: true,
+            replaceState: true
+          }
+        });
+
+      });
+    })()
+  </script>
+</body>
+
+</html>

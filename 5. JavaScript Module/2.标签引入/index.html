@@ -1,0 +1,28 @@
+<!-- 0.index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>2.标签引入</title>
+</head>
+
+<body>
+    <small>编辑器查看源码</small>
+    <h1>
+        The Answer is
+        <span id="answer"></span>
+    </h1>
+    <hr>
+    <h2>标签引入</h2>
+    <!-- 将大段的 JavaScript 分成更小的代码片段，并用 <script src=""> 标签加载 -->
+        <script type="text/javascript" src="1.add.js"></script>
+        <!-- <script type="text/javascript" src="5.pollute.js"></script> -->
+    <script type="text/javascript" src="2.reduce.js"></script>
+    <script type="text/javascript" src="3.sum.js"></script>
+    <script type="text/javascript" src="4.main.js"></script>
+    <!-- 1. 缺乏依赖解析，必须保证文件顺序 -->
+    <!-- 2. 全局命令空间污染，容易命名冲突 -->
+</body>
+
+</html>

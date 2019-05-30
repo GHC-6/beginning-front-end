@@ -1,0 +1,5 @@
+1.基本类型有哪些？
+字符串类型（String）、数值类型(Number)、布尔类型(Boolean)、空类型（Null）、未定义类型（Undefined）
+
+2.引用类型有哪些？
+对象(Object)、数组(Array)、函数(Function)
