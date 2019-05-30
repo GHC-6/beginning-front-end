@@ -1,0 +1,78 @@
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+}
+
+.header__logo {
+  margin: 0;
+}
+
+.header__logo, .header__nav {
+  display: inline-block;
+}
+
+.header__nav {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  list-style: none;
+}
+
+.nav__item {
+  float: left;
+  padding: 10px;
+  font-size: 24px;
+  color: #000;
+}
+
+.page__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.page__main {
+  position: relative;
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
+
+.page__container {
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.page__aside {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 300px;
+}
+
+.page__footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #10a4c2;
+}
+
+h2:target, h3:target {
+  color: red;
+}
+
+/*# sourceMappingURL=patch.css.map */

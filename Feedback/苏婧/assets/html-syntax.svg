@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690" height="354" viewBox="0 0 690 354">
+  <defs>
+    <clipPath id="clip-Web_1366_1">
+      <rect width="690" height="354"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1366_1" data-name="Web 1366 – 1" clip-path="url(#clip-Web_1366_1)">
+    <rect width="690" height="354" fill="#fff"/>
+    <g id="Group_10" data-name="Group 10" transform="translate(-35 -22)">
+      <g id="Group_7" data-name="Group 7" transform="translate(-4 -174)">
+        <text id="_h1" data-name="&lt;h1" transform="translate(59 283)" fill="#f92672" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">&lt;h1</tspan></text>
+        <text id="_" data-name="&gt;" transform="translate(338 283)" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">&gt;</tspan></text>
+        <text id="class" transform="translate(109 283)" fill="#26c30f" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">class</tspan></text>
+        <text id="Hello_World_" data-name="Hello World!" transform="translate(352 283)" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Hello World!</tspan></text>
+        <text id="_h1_" data-name="&lt;/h1&gt;" transform="translate(525 283)" fill="#f92672" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">&lt;/h1&gt;</tspan></text>
+        <text id="headline" transform="translate(209 283)" fill="#269fe5" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">headline</tspan></text>
+        <text id="Opening_tag" data-name="Opening tag" transform="translate(160 230)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Opening tag</tspan></text>
+        <text id="Attribute" transform="translate(108 329)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Attribute</tspan></text>
+        <text id="Value" transform="translate(246 329)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Value</tspan></text>
+        <text id="Content" transform="translate(410 329)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Content</tspan></text>
+        <text id="Element" transform="translate(299 372)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Element</tspan></text>
+        <text id="Closing_tag" data-name="Closing tag" transform="translate(515 230)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Closing tag</tspan></text>
+        <text id="_2" data-name="=" transform="translate(181 283)" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">=</tspan></text>
+        <text id="_3" data-name="&quot;" transform="translate(195 283)" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">&quot;</tspan></text>
+        <text id="_4" data-name="&quot;" transform="translate(324 283)" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">&quot;</tspan></text>
+        <g id="Group_5" data-name="Group 5">
+          <line id="Line_13" data-name="Line 13" y1="10" transform="translate(352.5 292.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_14" data-name="Line 14" y1="10" transform="translate(525.5 292.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_18" data-name="Line 18" y1="10" transform="translate(438.5 302.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_15" data-name="Line 15" x1="173" transform="translate(352.5 302.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+        <g id="Group_6" data-name="Group 6">
+          <line id="Line_13-2" data-name="Line 13" y1="10" transform="translate(59.5 335.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_14-2" data-name="Line 14" y1="10" transform="translate(597.5 335.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_18-2" data-name="Line 18" y1="10" transform="translate(328.5 345.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_15-2" data-name="Line 15" x1="538" transform="translate(59.5 345.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+        <g id="Group_4" data-name="Group 4" transform="translate(-0.5)">
+          <line id="Line_10" data-name="Line 10" y1="10" transform="translate(209.5 292.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_11" data-name="Line 11" y1="10" transform="translate(324.5 292.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_19" data-name="Line 19" y1="10" transform="translate(267.5 302.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_12" data-name="Line 12" x1="115" transform="translate(209.5 302.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+        <g id="Group_3" data-name="Group 3">
+          <line id="Line_7" data-name="Line 7" y1="10" transform="translate(109.5 292.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_8" data-name="Line 8" y1="10" transform="translate(181.5 292.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_20" data-name="Line 20" y1="10" transform="translate(145.5 302.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_9" data-name="Line 9" x1="72" transform="translate(109.5 302.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+        <g id="Group_2" data-name="Group 2">
+          <line id="Line_17" data-name="Line 17" y1="10" transform="translate(561.5 236.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_4" data-name="Line 4" y1="10" transform="translate(525.5 246.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_6" data-name="Line 6" y1="10" transform="translate(597.5 246.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_5" data-name="Line 5" x1="72" transform="translate(525.5 246.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+        <g id="Group_1" data-name="Group 1" transform="translate(-0.5)">
+          <line id="Line_1" data-name="Line 1" y1="10" transform="translate(59.5 246.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_16" data-name="Line 16" y1="10" transform="translate(200.5 236.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_3" data-name="Line 3" y1="10" transform="translate(352.5 246.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_2" data-name="Line 2" x1="293" transform="translate(59.5 246.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_9" data-name="Group 9">
+        <text id="_input_type_text_" data-name="&lt;input type=&quot;text&quot;&gt;" transform="translate(55 259)" fill="#f92672" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0" fill="#f92672">&lt;input </tspan><tspan y="0" fill="#26c30f">type</tspan><tspan y="0" fill="#000">=&quot;</tspan><tspan y="0" fill="#269fe5">text</tspan><tspan y="0" fill="#000">&quot;</tspan><tspan y="0" fill="#f92672">&gt;</tspan></text>
+        <text id="_img_src_filename.jpg_alt_alternate_text_" data-name="&lt;img src=&quot;filename.jpg&quot; alt=&quot;alternate text&quot;&gt;" transform="translate(55 300)" fill="#f92672" font-size="24" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0" fill="#f92672">&lt;img</tspan><tspan y="0" fill="#000"> </tspan><tspan y="0" fill="#26c30f">src</tspan><tspan y="0" fill="#000">=&quot;</tspan><tspan y="0" fill="#269fe5">filename.jpg</tspan><tspan y="0" fill="#000">&quot; </tspan><tspan y="0" fill="#26c30f">alt</tspan><tspan y="0" fill="#000">=&quot;</tspan><tspan y="0" fill="#269fe5">alternate text</tspan><tspan y="0" fill="#000">&quot;</tspan><tspan y="0" fill="#f92672">&gt;</tspan></text>
+        <text id="Self_closing_tag" data-name="Self closing tag" transform="translate(312 352)" font-size="14" font-family="SourceCodeVariable-Roman, Source Code Variable"><tspan x="0" y="0">Self closing tag</tspan></text>
+        <g id="Group_8" data-name="Group 8">
+          <line id="Line_24" data-name="Line 24" y1="10" transform="translate(55 315.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_22" data-name="Line 22" y1="10" transform="translate(379 325.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_21" data-name="Line 21" x1="648.5" transform="translate(55 325.5)" fill="none" stroke="#000" stroke-width="1"/>
+          <line id="Line_23" data-name="Line 23" y1="10" transform="translate(703 315.5)" fill="none" stroke="#000" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

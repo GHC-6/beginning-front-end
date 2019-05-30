@@ -1,0 +1,54 @@
+.top-bar {
+  top: 0;
+  padding: .8em;
+  text-align: center;
+  background: #1f1d1d;
+  width: 100%
+}
+
+.top-nav-bar a {
+  padding: .3em;
+  margin-bottom: .8em;
+  display: inline-block;
+  color: #fcfcfc;
+}
+
+.aside-menu {
+  padding-top: 4em;
+  float: left;
+  position: fixed;
+}
+
+.main-content {
+  padding: 4em 3em;
+  margin-left: 20%;
+  background: #fcfcfc;
+}
+
+.copyright {
+  bottom: 0;
+  text-align: center;
+  color: #fcfcfc;
+  background: #1f1d1d;
+}
+
+.aside-menu li {
+  line-height: 2em;
+  list-style: none;
+}
+
+.ref-internal {color: #1f1d1d;}
+
+.aside-menu .ref-internal:active {
+  color: #fcfcfc;
+  background: #1f1d1d;
+}
+
+.fixed {
+  position: fixed;
+  display: block;
+}
+
+.aside-nav-2 {font-size: .9em;}
+
+

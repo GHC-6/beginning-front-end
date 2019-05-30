@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css_training2.css" type="text/css"/>
+  <title>CSS</title>
+</head>
+<body>
+  <header class="top-bar fixed">
+    <nav class="top-nav-bar">
+        <a class="ref-internal" href="">Index</a>
+        <a class="ref-internal" href="">Feedback</a>
+    </nav>
+  </header>
+  <aside class="aside-menu">
+    <ul >
+      <li class="aside-nav-1">
+        <a class="ref-internal" href="#anchor-overview">Overview</a>
+      </li>
+      <li class="aside-nav-1">
+        <a class="ref-internal" href="#anchor-content">Content</a>
+        <ul>
+          <li class="aside-nav-2">
+          <a class="ref-internal" href="#anchor-syntax">Syntax</a>
+        </li>
+        <li class="aside-nav-2">
+          <a class="ref-internal" href="#anchor-semantics">语义/Semantics</a>
+        </li>
+        <li class="aside-nav-2">
+          <a class="ref-internal" href="#anchor-structure">结构/Structure</a>
+        </li>
+        <li class="aside-nav-2">
+          <a class="ref-internal" href="#anchor-template">模板/Template</a>
+        </li>
+        <li class="aside-nav-2">
+          <a class="ref-internal" href="#anchor-attribute">属性</a>
+        </li>
+      </ul>
+      </li>
+      <li class="aside-nav-1">
+        <a class="ref-internal" href="#anchor-Summary">Summary</a>
+      </li>
+      <li class="aside-nav-1">
+        <a class="ref-internal" href="#anchor-additional-resources">Additional Resources</a>
+      </li>
+      <li class="aside-nav-1">
+        <a class="ref-internal" href="#anchor-up-next">Up Next</a>
+      </li>
+    </ul>
+
+  </aside>
+  <main class="main-content">
+    <h1 id="anchor-headline">结构/HTML: Hypertext Markup Language</h1>
+
+<section>
+  <h2 id="anchor-overview">Overview</h2>
+  <ul>
+    <li>语义/Semantics</li>
+    <li>结构/Structure</li>
+    <li>Microdata, RDFa, JSON-LD</li>
+    <li>模板/Template</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="anchor-content">Content</h2>
+
+  <h3 id="anchor-syntax">Syntax</h3>
+  <img src="./assets/html-syntax.svg" alt="html syntax">
+
+  <h3 id="anchor-semantics">语义/Semantics</h3>
+  <p>语义化概念：通过丰富的语义关系对数据进行逻辑化描述，便于数据人机可读、检索挖掘和共享交换，实现信息处理的自动化和智能化；即人类提供良好结构的、作为人能识别的数据给机器，让不同机器能准确高效的意会和处理数据反馈给人类。 </p>
+  <p> 语义化排版文档信息，构建语义明确、结构清晰的文档，便于浏览器解析渲染、搜索引擎建立索引抓取页面，提升内容的交互性、可读性和可维护性，视觉呈现上即使没有引入样式，人还是能“愉快”的阅读主体内容，如标题就是标题、段落就是段落、列表就列表… </p>
+  <p>可以遵循 <a href="https://www.w3.org/RDF/">RDF(Resource Description Framework)</a>、<a href="https://www.w3.org/TR/rdfa-lite/">RDFa</a>、<a href="http://microformats.org/wiki/Main_Page">Microformats</a>、 <a href="https://www.w3.org/TR/microdata/">Microdata</a>等规范，更为丰富地描述和表达网络资源的内容与结构。</p>
+
+  <h3 id="anchor-structure">结构/Structure</h3>
+  <p>根据文档特征，在<a href="https://www.w3.org/TR/html401/">HTML 4.01</a>规范中定义了大量的语义标签，如<a href="https://www.w3.org/TR/html401/struct/text.html">文本</a>、<a href="https://www.w3.org/TR/html401/struct/lists.html">列表</a>、<a href="https://www.w3.org/TR/html401/struct/tables.html">表格</a>、 <a href="https://www.w3.org/TR/html401/struct/links.html">链接</a>、<a href="https://www.w3.org/TR/html401/struct/objects.html">媒体对象</a>、<a href="https://www.w3.org/TR/html401/interact/forms.html">表单</a>等范畴下的标签元素；在<a href="https://www.w3.org/TR/html52/">HTML 5</a>中更为详细的规范化了文档特征，添加了新的标签元素用以更明确的定义和描述文档的结构，并且对所有元素按 Metadata、Flow、Sectioning、Heading、Phrasing、Embedded、Interactive 等属性重新定义了分类规则。</p>
+  <object data="./assets/pro-web-reconstruction-content-venn.svg" width="1000" height="288">
+    <img alt="Pro web reconstruction content venn" src="./assets/pro-web-reconstruction-content-venn.png" width="512" height="288">
+  </object>
+
+  <h3 id="anchor-template">模板/Template</h3>
+  <p>采用模板，将用户界面与业务数据分离，通过模板语言逻辑控制、解析引擎，输出 Web 结构，有 <a href="https://mustache.github.io/">Mustache</a>, <a href="http://handlebarsjs.com/">Handlebars</a>, <a href="https://ejs.co/">EJS</a>, <a href="http://jade-lang.com/">Jade</a>, <a href="http://haml.info/">Haml</a>, <a href="https://github.com/pugjs/pug">Pug</a> 等模板技术方案；</p>
+  <p>另外，支持视图、数据绑定的 MV* 框架，有内部的模板实现，以适应数据的依赖、数据的变化。</p>
+
+  <h3 id="anchor-attribute">属性</h3>
+  <p>HTML 元素可以通过配置属性调整元素的行为，如 <code>class</code>, <code>title</code>, <code>data-*</code> 等属性。</p>
+</section>
+
+<section>
+  <h2 id="anchor-Summary">Summary</h2>
+  <p>HTML 结构化、逻辑化内容，开发者要合理使用语义标签，分明<strong>层次嵌套</strong>、清晰<strong>标签职责</strong>。</p>
+</section>
+
+<section>
+  <h2 id="anchor-additional-resources">Additional Resources</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/HTML5_element_list">HTML5 标签列表 | MDN</a></li>
+    <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element">HTML 元素参考，包括 HTML5 中不再有效的元素 | MDN</a> </li>
+    <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Attributes">HTML 属性参考 | MDN</a></li>
+    <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/data-*">data-* 自定义数据属性 | MDN</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="anchor-up-next">Up Next</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5">HTML5 技术集 | MDN</a></li>
+    <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML">HTML（超文本标记语言） | MDN</a></li>
+    <li><a href="https://schema.org/MedicalCause">MedicalCause - schema.org</a></li>
+    <li><a href="https://dev.w3.org/html5/html-author/charref">Character Entity Reference Chart</a></li>
+    <li><a href="http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html">语种名称代码</a></li>
+  </ul>
+</section>
+  </main>
+  <footer class="copyright">
+    <p>&copy; Joy</p>
+  </footer>
+</body>
+</html>
