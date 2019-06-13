@@ -11,6 +11,7 @@
 - Git，内容管理系统/Content Management Systems
 - 标注
 - Tampermonkey
+- Extensions
 
 
 ### Content/Additional Resources
@@ -75,11 +76,11 @@ function compareByLocale(order = 'asc') {
 ```
 
 - 语法
-    - [Cheat Sheet | Markdown Guide](https://www.markdownguide.org/cheat-sheet)
-    - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax)
-    - [Extended Syntax | Markdown Guide](https://www.markdownguide.org/extended-syntax)
+    + [Cheat Sheet | Markdown Guide](https://www.markdownguide.org/cheat-sheet)
+    + [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax)
+    + [Extended Syntax | Markdown Guide](https://www.markdownguide.org/extended-syntax)
 - 浏览器拷贝支持
-    - [Copycat](https://github.com/BlackGlory/Copycat)
+    + [Copycat](https://github.com/BlackGlory/Copycat)
 
 #### Screenshot
 
@@ -89,16 +90,19 @@ function compareByLocale(order = 'asc') {
 
 #### Git，内容管理系统/Content Management Systems
 
+- 操作
+    + [Git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+    + [Git 入门](https://backlog.com/git-tutorial/cn/)
 - 在线
-    - [GitHub](https://github.com/)
-    - [GitLab](https://about.gitlab.com/)
-    - [Bitbucket](https://bitbucket.org/)
-    - [Coding](https://coding.net/)
+    + [GitHub](https://github.com/)
+    + [GitLab](https://about.gitlab.com/)
+    + [Bitbucket](https://bitbucket.org/)
+    + [Coding](https://coding.net/)
 - 自已搭
-    - [Gogs](https://github.com/gogs/gogs)
-    - [Gitea](https://github.com/go-gitea/gitea)
+    + [Gogs](https://github.com/gogs/gogs)
+    + [Gitea](https://github.com/go-gitea/gitea)
 - 客户端
-    - [Git - GUI Clients](https://git-scm.com/download/gui/win)
+    + [Git - GUI Clients](https://git-scm.com/download/gui/win)
     - 建议用 [Git Bash](https://git-scm.com/)
 
 #### 标注
@@ -113,6 +117,26 @@ function compareByLocale(order = 'asc') {
 浏览器扩展，安装或编写 JavaScript 对 Web 进行定制；
 
 **有风险**；
+
+#### Extensions
+
+- Chrome
+    + [Octotree - GitHub 代码阅览](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
+    + [Window Resizer - 模拟屏幕分辨率](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
+    + [Anything to QRcode - 供手机扫描用](https://chrome.google.com/webstore/detail/anything-to-qrcode/calkaljlpglgogjfcidhlmmlgjnpmnmf)
+    + [Google 翻译](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb)
+    + [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
+    + [LastPass](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+    + [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+- Firefox
+    + [Octotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/)
+    + [Window Resize - 模拟屏幕分辨率](https://addons.mozilla.org/en-US/firefox/addon/window-resize/)
+    + [Ultimate QR-code Generator](https://addons.mozilla.org/en-US/firefox/addon/ultimate-qr-generator/)
+    + [轻灵划译](https://addons.mozilla.org/en-US/firefox/addon/ql_en2zh/?src=search)
+    + [Proxy SwitchyOmega](https://addons.mozilla.org/en-US/firefox/addon/switchyomega/)
+    + [LastPass](https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/)
+    + [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+
 
 ### Summary
 
