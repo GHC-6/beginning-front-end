@@ -1,0 +1,20 @@
+采用 ECMAScript 6 模块如何导出导入？
+
+导入 import 
+import Hello from './Hello.js';
+
+导出 export 
+export const type = 'dog';
+
+export function say(){
+    return 'Hello!'
+}
+
+export class Hello{
+	constructor(name){
+        this.name = name;
+    }
+    say(){
+	    console.log('Hello'+this.name);
+    }
+}
