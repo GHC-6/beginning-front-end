@@ -24,7 +24,7 @@
 
 ![](./assets/RGB_illumination.jpg)
 
-![](./assets/Hsl-hsv_models_b.svg)
+![](./assets/Hsl-hsv_models_b.png)
 
 - RGB, RGBA, **R**ed, **G**reen, **B**lue, **A**lpha, 加色法**颜色模型**，Alpha 通道指透明度
 - HSL, HSLA, 色相/**H**ue, 饱和度/**S**aturation, 明(亮)度/**L**ightness(**V**alue), 圆柱坐标系
@@ -90,7 +90,7 @@ RGB(2^8)*(2^8)*(2^8) 在一个像素上可进行1677万种颜色采样，人眼�
 
 字体匹配：指定的首选字体 → 回退字体 → 通用族字体，选择类似的替代字体。
 
-#### Summary/Web中图形应用
+### Summary/Web中图形应用
 
 - 色彩、形状表现简单，矢量图
 - 色彩细腻丰富，表现力强，位图
