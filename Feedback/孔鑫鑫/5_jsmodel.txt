@@ -1,3 +1,5 @@
+﻿js 模块化
+
 采用 ECMAScript 6 模块如何导出导入？
 导出 export ：
 export function foo(){..};
