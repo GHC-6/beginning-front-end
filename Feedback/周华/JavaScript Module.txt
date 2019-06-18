@@ -1,4 +1,0 @@
-Questions?
-采用 ECMAScript 6 模块如何导出导入？
- 使用 export和import 命令
-使用export 必须与模块内部的变量建立一一对应关系；
