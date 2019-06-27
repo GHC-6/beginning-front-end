@@ -135,7 +135,7 @@ Design Patterns 框架和库提供了 **CLI** 脚手架，用于初始化、开�
 
 #### [TypeScript](https://www.typescriptlang.org/index.html)
 
-JavaScript 严格超集，添加了对静态类型、经典的面向对象语言特性（如类、继承、接口、泛型和名字空间等）的支持。
+JavaScript 严格超集，添加了对静态类型、经典的面向对象语言特性（如类、继承、接口、泛型和命名空间等）的支持。
 
 ### Summary
 
