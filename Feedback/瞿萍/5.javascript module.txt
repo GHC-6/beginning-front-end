@@ -1,0 +1,4 @@
+采用 ECMAScript 6 模块如何导出导入？
+使用import和export。
+export变量，函数，class, 批量导出，export default。
+使用export default时，对应的import语句不需要使用大括号，否则对应的import要使用大括号。

@@ -1,0 +1,3 @@
+- Pycharm自带Code Inspections和Reformat Code
+- 安装扩展工具flake8
+- 遵循[Google开源项目风格指南](https://github.com/zh-google-styleguide/zh-google-styleguide/tree/master/google-python-styleguide)
