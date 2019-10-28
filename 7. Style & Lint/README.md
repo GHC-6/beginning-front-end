@@ -38,7 +38,7 @@ EditorConfig 由用于定义编码样式的文件格式和一组文本编辑器�
 #### Commit Message Guidelines
 
 - [Commit Message Guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines)
-- [约定式提交](https://www.conventionalcommits.org/zh/v1.0.0-beta.3/)
+- [约定式提交](https://www.conventionalcommits.org/zh-cn/)
 
 #### Linter/Formatter (质量、颜值)
 
