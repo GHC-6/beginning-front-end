@@ -114,6 +114,7 @@
 
 ### Additional Resources
 
+- [《CSS揭秘》](https://item.jd.com/11911279.html)，推荐啃书📚
 - [CSS教程 - 入门教程、选择器、取值与单位-长度](https://www.html.cn/book/css/)
 - [CSS3教程](https://www.html.cn/doc/css3/)
 
