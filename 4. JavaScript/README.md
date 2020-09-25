@@ -243,13 +243,13 @@ function errorHandler(statusCode){
 - ~~入门 JavaScript：[《JavaScript 高级程序设计（第3版）》](https://item.jd.com/10951037.html)(第1-7章，第13、17章，第20-24章)~~
 - 入门 JavaScript: [《JavaScript 高级程序设计（第4版）》](https://item.jd.com/12958580.html)(第1-6章，第8、10、11章，第14-17章，第23、24、25、26章)，看&做完好几遍之后，再搞剩下章节
 - 入门 ES6：[《深入理解 ES6》](https://item.jd.com/12213616.html)/[《ES6 标准入门 (第3版)》](https://item.jd.com/12172449.html)，可暂时跳过迭代器、生成器，代理、反射章节
-- 语言特性：[JavaScript语言精粹](https://item.jd.com/11090963.html)
+- 语言特性：[《JavaScript 语言精粹》](https://item.jd.com/11090963.html)
 - 入门 DOM：[《JavaScript DOM编程艺术（第2版）》](https://item.jd.com/10603153.html)(第3-10章)
 
 ### Up Next
 
-- 进阶：[高性能 JavaScript](https://item.jd.com/11755693.html)
-- 拓展：[你不知道的 JavaScript](https://item.jd.com/12288843.html)
+- 进阶：[《高性能 JavaScript》](https://item.jd.com/11755693.html)
+- 拓展：[《你不知道的 JavaScript》](https://item.jd.com/12288843.html)
 
 ### Questions?
 
