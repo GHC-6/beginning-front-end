@@ -27,6 +27,9 @@
 
 <object data="./assets/pro-web-reconstruction-content-venn.svg" width="1000" height="288"><img alt="" src="./assets/pro-web-reconstruction-content-venn.png" width="512" height="288"></object>
 
+> 浏览 [RAW](https://raw.githubusercontent.com/GHC-6/beginning-front-end/master/1.%20HTML/assets/pro-web-reconstruction-content-venn.svg) 文件，各 Section 有对应的 HTML TAG，
+> 如无法访问需要在 HOST 中配置 151.101.76.133 raw.githubusercontent.com
+
 #### 模板/Template
 
 采用模板，将用户界面与业务数据分离，通过模板语言逻辑控制、解析引擎，输出 Web 结构，有 [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), [EJS](https://ejs.co/), [Jade](http://jade-lang.com/), [Haml](http://haml.info/), [Pug](https://github.com/pugjs/pug) 等模板技术方案；
